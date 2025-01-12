@@ -1,1 +1,96 @@
-<h1>Prueba14</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psicología | Tu bienestar emocional</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <header class="header bg-light p-3 shadow-sm">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="logo">Psicología</h1>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="#servicios" class="nav-link">Servicios</a></li>
+                    <li class="nav-item"><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+                    <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero bg-primary text-white text-center py-5">
+            <div class="container">
+                <h2>Bienvenido a tu espacio de bienestar emocional</h2>
+                <p>Explora cómo la psicología puede ayudarte a alcanzar una vida equilibrada y feliz.</p>
+            </div>
+        </section>
+
+        <section id="servicios" class="py-5">
+            <div class="container">
+                <h3 class="text-center mb-4">Servicios</h3>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="service text-center">
+                            <h4>Terapia Individual</h4>
+                            <p>Te acompaño en tu camino hacia el autoconocimiento y el bienestar.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service text-center">
+                            <h4>Terapia de Pareja</h4>
+                            <p>Fortalece la comunicación y construye una relación más saludable.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service text-center">
+                            <h4>Terapia Familiar</h4>
+                            <p>Mejoramos la dinámica y los lazos familiares.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre-mi" class="bg-light py-5">
+            <div class="container text-center">
+                <h3>Sobre mí</h3>
+                <p>Soy psicóloga con experiencia en terapia individual, familiar y de pareja. Mi objetivo es ayudarte a descubrir tu mejor versión.</p>
+                <img src="https://via.placeholder.com/150" alt="Psicóloga" class="rounded-circle mt-3">
+            </div>
+        </section>
+
+        <section id="contacto" class="py-5">
+            <div class="container">
+                <h3 class="text-center mb-4">Contacto</h3>
+                <form id="contact-form">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Psicología | Todos los derechos reservados</p>
+    </footer>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
